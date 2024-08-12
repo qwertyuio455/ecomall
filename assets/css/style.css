@@ -1,0 +1,255 @@
+/* Reset CSS */
+/* comment */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 96px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+    float: left;
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    color: black;
+    text-decoration: none;
+    line-height: 96px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color:blue
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 100%;
+    left: 45px;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 40px;
+}
+
+#nav .nav-angle-down {
+    font-size: 12px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 24px;
+    position: relative;
+}
+
+#header .search-icon {
+    font-size: 36px;
+    line-height: 96px;
+}
+
+.search-icon:hover {
+    color: blue;
+}
+
+.slider{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 130px;
+
+}
+
+.slider .img{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.slider .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    clip-path: circle(0% at 0% 100%);
+    transition: all 0.7s;
+}
+.slide1 {
+    border-radius: 10px;
+}
+#one:checked ~ .slide1 img{
+    clip-path: circle(150% at 0% 100%);
+}
+
+#two:checked ~ .slide1 img,
+#two:checked ~ .slide2 img{
+    clip-path: circle(150% at 0% 100%);
+}
+.slider .sliders{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+}
+
+.slider .sliders label{
+    height: 13px;
+    width: 13px;
+    border: 2px solid gray;
+    margin: 0 3px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.sliders label:hover{
+    background: gray;
+}
+
+.discount-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0 auto;
+}
+
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid_column2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+
+.grid_column12{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+}
+
+.home-product-item {
+    margin-top: 48px;
+
+}
+
+.home-product-item-img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.home-product-item-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin: 10px;
+    overflow: hidden;
+    display:block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.home-product-item-price {
+    display: flex;
+    margin-left: 10px;
+    align-items: baseline;
+}
+.home-product-item-price-so {
+    font-size: 1.4rem; 
+}
+.home-product-item-price-donvi {
+    font-size: 0.8rem;
+}
+.home-product-item-action {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0;
+    font-size: 1.4rem;
+}
+.home-product-rating {
+    
+}
+
+i.home-product-item-star-fill {
+    color: rgb(238, 10, 10);
+    display: none;
+}
+
+.home-product-rating--liked .home-product-item-star-fill {
+    display: inline-block;
+}
+
+.home-product-rating--liked .home-product-item-star-empty {
+    display: none;
+}
+.home-product-item-comment {
+    font-size: 1rem;
+    color: rgba(128, 128, 128, 0.903);
+}
+
+#footer{
+
+}
