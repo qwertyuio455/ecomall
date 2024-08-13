@@ -16,7 +16,7 @@ html{
 }
 /*begin: header*/
 #header {
-    height: 96px;
+    height: 100px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -31,8 +31,8 @@ html{
 /*logo*/
 .logo {
     align-self: center;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 /*navbar*/
 #nav {
@@ -57,6 +57,7 @@ html{
     line-height: 96px;
     padding: 0 24px;
     display: inline-block;
+    font-size: 16px;
 }
 
 #nav > li > a {
@@ -99,16 +100,23 @@ html{
 }
 
 #header .search-icon {
-    font-size: 36px;
+    font-size: 20px;
     line-height: 96px;
     cursor: pointer;
-    position: relative;
 }
 
 .search-icon:hover {
     color: blue;
 }
 
+.search-btn i {
+    display: inline-block;
+    position: relative;
+}
+
+.search-btn i:hover .header-search {
+    display: block;
+}
 
 .header-search {
     height: 60px;
@@ -117,7 +125,7 @@ html{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    margin-top: 102px;
+    margin-top: 100px;
     display: flex;
     position: absolute;
 }
@@ -150,9 +158,25 @@ html{
     font-size: 1.4rem;
     color: white;
     height: 80%;
-    width: 30px;
-    
+    width: 30px;  
 }
+
+/*login*/
+.login{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/*Giỏ hàng*/
+.cart {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 50px;
+}
+
 /*end: header*/
 
 /*slider*/
@@ -229,7 +253,9 @@ html{
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
-    padding: 0 auto;
+    padding: 0 16px;
+    margin-top: 30px;
+    border-radius: 3px;
 }
 /*end: content*/
 
