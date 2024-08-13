@@ -14,7 +14,7 @@ html{
 #main {
 
 }
-
+/*begin: header*/
 #header {
     height: 96px;
     background-color: white;
@@ -25,10 +25,21 @@ html{
     right: 0;
     height: 100px;
     z-index: 1;
+    display: flex;
+    align-self: center;
 }
-
+/*logo*/
+.logo {
+    align-self: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+/*navbar*/
 #nav {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
 }
 
 #nav, .subnav {
@@ -73,29 +84,78 @@ html{
 
 #nav .subnav a {
     color: black;
-    padding: 0 12px;
+    padding: 0 6px;
     line-height: 40px;
 }
 
 #nav .nav-angle-down {
     font-size: 12px;
 }
-
+/*search*/
 #header .search-btn {
     float: right;
     padding: 0 24px;
-    position: relative;
+    display: flex;
 }
 
 #header .search-icon {
     font-size: 36px;
     line-height: 96px;
+    cursor: pointer;
+    position: relative;
 }
 
 .search-icon:hover {
     color: blue;
 }
 
+
+.header-search {
+    height: 60px;
+    width: 345px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-top: 100px;
+    display: flex;
+    position: absolute;
+}
+
+.header-search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    height: 90%;
+    width: 70%;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0 16px;
+    align-self: center;
+}
+
+.header-search .header-search-btn {
+    background-color: blue;
+    height: 80%;
+    align-self: center;
+    border-radius: 10px;
+    width: 63px;
+    margin-right: 8px;
+}
+
+.header-search-btn:hover {
+    background-color: rgba(0, 0, 255, 0.758);
+}
+.header-search-button {
+    font-size: 1.4rem;
+    color: white;
+    height: 80%;
+    width: 30px;
+    
+}
+/*end: header*/
+
+/*slider*/
 .slider{
     position: relative;
     height: 400px;
@@ -130,6 +190,15 @@ html{
 #two:checked ~ .slide2 img{
     clip-path: circle(150% at 0% 100%);
 }
+
+#one {
+    display: none;
+}
+
+#two {
+    display: none;
+}
+
 .slider .sliders{
     position: absolute;
     bottom: 20px;
@@ -152,7 +221,9 @@ html{
 .sliders label:hover{
     background: gray;
 }
+/*end: slider*/
 
+/*content*/
 .discount-list {
     display: flex;
     flex-direction: row;
@@ -160,8 +231,9 @@ html{
     list-style-type: none;
     padding: 0 auto;
 }
+/*end: content*/
 
-
+/*container*/
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -250,7 +322,7 @@ i.home-product-item-star-fill {
     font-size: 1rem;
     color: rgba(128, 128, 128, 0.903);
 }
-
+/*end: container*/
 #footer{
 
 }
