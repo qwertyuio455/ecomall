@@ -430,15 +430,11 @@ html{
     transition: transform .2s;
 }
 
-.home-product-item-img:hover {
+/*.home-product-item-img:hover {
     transform: scale(1.1) rotate(0.1deg);
     border: none;
     outline: none;
-}
-
-.home-product-item:hover .home-product-item-img:hover {
-    box-shadow: none;
-}
+}*/
 
 .home-product-item-name {
     font-size: 1rem;
@@ -449,7 +445,7 @@ html{
     display:block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     
 }
 
