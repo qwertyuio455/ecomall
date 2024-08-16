@@ -54,10 +54,9 @@ html {
 #nav li a {
   color: black;
   text-decoration: none;
-  line-height: 96px;
-  padding: 0 16px;
+  padding: 0 10px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #nav > li > a {
@@ -139,51 +138,22 @@ html {
   align-self: center;
 }
 
-.header-search .header-search-btn {
-  background-color: blue;
-  height: 80%;
-  align-self: center;
-  border-radius: 10px;
-  width: 63px;
-  margin-right: 8px;
-}
-
-.header-search-btn:hover {
-  background-color: rgba(0, 0, 255, 0.758);
-}
-.header-search-button {
-  font-size: 1.4rem;
-  color: white;
-  height: 80%;
-  width: 30px;
-  margin-top: 10px;
-}
-
-.search-icon:focus ~ .header-search {
-  display: block;
 }
 
 /*login*/
-.login {
-  display: flex;
-  align-items: center;
-  padding-left: 8px;
-  padding-right: 8px;
-  color: black;
-}
-
 .login-style {
-  color: black;
-}
-
-.login-style:hover {
-  color: rgb(61, 111, 250);
+  background-color: white;
+  padding: 8px;
 }
 
 .user {
-  font-size: 23px;
+  color: black;
+  padding-left: 10px;
 }
 
+.user:hover{
+  color: rgb(61, 111, 250);
+}
 /*Giỏ hàng*/
 .cart-btn {
   border: none;
@@ -353,10 +323,12 @@ html {
   border-bottom: 1px solid gray;
   align-items: flex-end;
   padding-bottom: 4px;
+  justify-content: space-between;
 }
 
-.product-heading {
-  padding-right: 850px;
+.product-text {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .product-header-text {
@@ -429,26 +401,23 @@ html {
   transition: transform 0.2s;
 }
 
-.home-product-item-img:hover {
-  transform: scale(1.1) rotate(0.1deg);
-  border: none;
-  outline: none;
-}
-
-.home-product-item:hover .home-product-item-img:hover {
-  box-shadow: none;
-}
+/*.home-product-item-img:hover {
+    transform: scale(1.1) rotate(0.1deg);
+    border: none;
+    outline: none;
+}*/
 
 .home-product-item-name {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-  margin: 10px;
-  overflow: hidden;
-  display: block;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin: 10px;
+    overflow: hidden;
+    display:block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    
 }
 
 .home-product-item-name:hover {
