@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(61, 111, 250);
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  padding: 5px 0;
+}
+
+.header {
+  height: 140px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.header__big {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  z-index: 1001;
+}
+.header__big--logo {
+  align-self: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.header__big--nav {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
+}
+.header__big--nav .list {
+  display: inline-block;
+  position: relative;
+}
+.header__big--nav .list .link {
+  padding: 0 10px;
+  font-size: 15px;
+  display: inline-block;
+}
+.header__big--nav .subnav {
+  float: left;
+  display: none;
+  position: absolute;
+  width: 100px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  top: 100%;
+  left: 45px;
+  line-height: 40px;
+}
+.header__big--nav .subnav a {
+  padding: 0 6px;
+}
+.header__big--search {
+  width: 250px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+.header__big--search .search--input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px 0px;
+  width: 90%;
+  caret-color: rgba(75, 111, 242, 0.797);
+}
+.header__big--search .search--icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: rgba(75, 111, 242, 0.797);
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+.header__big--search .search--icon:hover {
+  color: blue;
+}
+.header__big--login {
+  padding: 8px;
+}
+.header__big--login .user {
+  padding: 2px;
+}
+.header__big--cart {
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 8px;
+}
+.header__big--cart .cart-link {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(61, 111, 250);
+  text-decoration: none;
+  color: rgb(61, 111, 250);
+  font-size: 1rem;
+  background-color: white;
+  padding: 8px;
+  margin-right: 42px;
+  border-radius: 5px;
+}
+.header__big--cart .cart-link:hover {
+  background-color: rgb(61, 111, 250);
+  color: white;
+}
+.header__big--cart .cart-icon {
+  font-size: 23px;
+}
+.header__small {
+  height: 40px;
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+  font-size: 13.5px;
+}
+.header__small .icon-right {
+  font-size: 11px;
+}
+.header__small li {
+  padding: 0 4px;
+}
+.header__small li a {
+  color: grey;
+}
+.header__small li a:hover {
+  color: black;
+}
+.header__small .special {
+  color: black;
+  cursor: pointer;
+}
+
+.header__big--nav > li > a {
+  text-transform: uppercase;
+}
+
+.nav li:hover .subnav {
+  display: block;
+}
+
+.nav > li:hover > a,
+.nav .subnav li:hover a {
+  color: blue;
+}
+
+.nav-angle-down {
+  font-size: 12px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  padding: 30px;
+}
+.container__slider {
+  width: 50%;
+  padding: 20px;
+}
+.container__slider .slides {
+  width: 100%;
+  height: 70%;
+}
+.container__slider .slides img {
+  height: 70%;
+  width: 70%;
+}
+.container__slider .small-slide {
+  width: 100%;
+  height: 30%;
+  display: flex;
+}
+.container__slider .small-slide img {
+  height: 75%;
+  width: 15%;
+}
+.container__information {
+  width: 50%;
+}
+.container__information--header {
+  padding: 8px 0;
+  font-size: 28px;
+}
+.container__information--rate .rating-happy {
+  padding: 4px 0;
+}
+.container__information--rate .rating-happy .rating-good {
+  color: red;
+}
+.container__information--rate .comment1 {
+  padding: 6px;
+}
+.container__information--price {
+  padding: 4px 0;
+}
+.container__information--price .price-so {
+  font-size: 30px;
+  color: rgb(187, 0, 0);
+}
+.container__information--price .price-donvi {
+  font-size: 23px;
+  color: rgb(187, 0, 0);
+  padding: 0 4px;
+}
+.container__information--code {
+  padding: 4px 0;
+  display: flex;
+  align-items: flex-end;
+}
+.container__information--code .t3 {
+  font-size: 20px;
+}
+.container__information--code .t4 {
+  font-size: 16px;
+  padding: 1.3px 8px;
+}
+.container__information--list .text .t3 {
+  font-size: 20px;
+}
+.container__information--list .text .t4 {
+  font-size: 16px;
+  padding: 1.3px 8px;
+  cursor: pointer;
+  color: rgb(61, 111, 250);
+}
+.container__information--list ul {
+  padding: 8px 0;
+  list-style-type: circle;
+}
+.container__information--list ul li {
+  margin-left: 15px;
+  padding: 4px 0;
+}
+.container__information--cart {
+  display: flex;
+  align-items: center;
+}
+.container__information--cart input {
+  height: 50px;
+  width: 140px;
+  border: 1px solid black;
+  caret-color: black;
+  font-size: 30px;
+}
+.container__information--cart button {
+  height: 50px;
+  width: 170px;
+  margin: 0 15px;
+  background-color: rgb(61, 111, 250);
+  color: white;
+  border: none;
+  color: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+.container__information--cart button:hover {
+  background-color: white;
+  color: rgb(61, 111, 250);
+  border: 1px solid rgb(61, 111, 250);
+}
+.container__information--share {
+  padding: 16px 0;
+}
+.container__information--share span {
+  font-size: 18px;
+}
+.container__information--share i {
+  font-size: 18px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+.container__information--share i:hover {
+  color: rgb(61, 111, 250);
+}
+
+.content {
+  width: 100%;
+}
+.content__header {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+  background-color: white;
+}
+.content__header h3 {
+  padding: 8px 16px;
+  font-size: 18px;
+}
+.content__header .special a {
+  cursor: pointer;
+  color: rgb(61, 111, 250);
+}
+.content__paragraph {
+  background-color: rgba(237, 237, 237, 0.718);
+  margin: 0 40px;
+  padding: 35px;
+  font-size: 15px;
+}
+.content__paragraph .p1 {
+  font-size: 15px;
+}
+.content__paragraph h5 {
+  font-size: 20px;
+}
+.content__paragraph .p2 ol {
+  margin-left: 24px;
+}
+.content__paragraph .p3 {
+  margin: 0;
+  padding: 0;
+}
+
+.rate {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.rate .star {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.rate .star span {
+  font-size: 20px;
+}
+.rate .star h3 {
+  font-size: 40px;
+  color: rgb(255, 230, 0);
+}
+.rate .star i {
+  color: red;
+  font-size: 18px;
+}/*# sourceMappingURL=product.css.map */
