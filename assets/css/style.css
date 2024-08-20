@@ -373,6 +373,8 @@ html {
   padding: 0 12px;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
+  color: black;
 }
 
 .home-product-item {
