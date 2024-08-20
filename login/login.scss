@@ -1,11 +1,174 @@
-.sign-in {
-  top:0;
-}
+//theme colors
+$color1: black;
+$color2: rgb(180, 178, 178);
+$color3: rgb(54, 179, 251);
+$color4: rgba(102, 165, 248, 0.877);
+$shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
 
-.header {
+a {
   text-decoration: none;
+  color: $color3;
 }
 
+a:hover {
+  color: blue;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: black;
+  font-size: 23px;
+  padding: 0 30px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+h4 {
+  font-size: 12px;
+  float: right;
+}
+
+html {
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color4;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  .content__login {
+    height: 70%;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 10px;
+    &--img {
+      display: flex;
+      flex: 1;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      image{
+        height: 80%;
+        width: 80%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+    }
+    &--container {
+      display: flex;
+      flex: 1.5;
+      align-self: center;
+      justify-content: center;
+    }
+  }
+}
+
+.wrapper{
+  padding: 0 50px ;
+  body{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.email {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 20px;
+  width: 95%;
+  border: 1px solid grey;
+  border-radius: 20px;
+  margin: 12px 0;
+  e-icon {
+    color: $color4;
+    width: 10%;
+  }
+  .emailaddress {
+    border: none;
+    outline: none;
+    padding: 6px;
+    width: 90%;
+    caret-color: $color4;
+  }
+}
+
+.password {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 20px;
+  width: 95%;
+  border: 1px solid grey;
+  border-radius: 20px;
+  margin: 12px 0;
+  k-icon {
+    color: $color4;
+    width: 10%;
+  }
+  .pass {
+    border: none;
+    outline: none;
+    padding: 6px;
+    width: 90%;
+    caret-color: $color4;
+  }
+}
+
+.tick {
+  display: flex;
+  h5 {
+    font-size: 12px;
+    color: $color2;
+  }
+}
+
+.login-button {
+  width: 100%;
+  background-color: $color4;
+  color: white;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform ease-out 0.1s;
+  will-change: transform;
+} 
+
+.login-button:hover {
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-1.2px);
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  margin-top: 70px;
+  &__text {
+    padding-right: 10px;
+  }
+}
+
+.back {
+  display: flex;
+  font-size: 12px;
+  margin-top: 10px;
+  float: right;
+}
 
 
 
