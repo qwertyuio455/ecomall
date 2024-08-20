@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="/cart/cart.css">
+    <link rel="stylesheet" href="/assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="header">
+            <div class="header__big">
+                <!--begin: logo-->
+                <div class="header__big--logo">
+                    <a href="http://127.0.0.1:5500/">
+                      <img
+                        src="https://cdn2492.cdn-template-4s.com/media/logo/logo.png"
+                        width="140px"
+                        height="37px"
+                      />
+                    </a>
+                </div>
+                <!--end: logo-->
+          
+                <!--begin: nav-->
+                <ul class="header__big--nav">
+                    <li class="list"><a class="link" href="#"> Liên hệ </a></li>
+                    <li class="list"><a class="link" href="#"> Bài viết </a></li>
+                    <li class="list"><a class="link" href="#"> Khuyến mại </a></li>
+                    <li class="list"><a class="link" href="#"> Đồng hồ </a></li>
+                    <li class="list">
+                        <a class="link" href="#">
+                        Máy tính
+                        <i class="nav-angle-down ti-angle-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="#">Laptops</a></li>
+                            <li><a href="#">Tablets</a></li>
+                            <li><a href="#">Monitors</a></li>
+                            <li><a href="#">Phụ kiện</a></li>
+                        </ul>
+                    </li>
+                    <li class="list"><a class="link" href="#"> Điện thoại </a></li>
+                    <li class="list"><a class="link" href="#"> Giới thiệu </a></li>
+                </ul>
+                <!--end: nav-->
+    
+                <!--begin: search-->
+                <div class="header__big--search">
+                    <input
+                      type="text"
+                      class="search--input"
+                      placeholder="Từ khóa tìm kiếm"
+                    />
+                    <i class="search--icon ti-search"></i>
+                </div>
+                <!--end: search-->
+          
+                <!--begin: login-->
+                <a class="header__big--login" href="./login/login.html">
+                    <i class="user ti-user"></i>
+                    <span class="user"> Tài khoản </span>
+                </a>
+          
+                <!--begin: giohang-->
+                <button class="header__big--cart">
+                    <a class="cart-link" href="#">
+                      <i class="cart-icon ti-shopping-cart"></i>
+                      <span class="cart-title"> Giỏ hàng </span>
+                    </a>
+                </button>
+                <!--end: giohang-->
+            </div>
+    
+            <ul class="header__small">
+                <li><a href="../index.html"> Trang chủ <i class = "icon-right ti-angle-right"></i></a></li>
+                <li><a href="#"> Máy chủ <i class = "icon-right ti-angle-right"></i></a></li>
+                <li><a href="#"> Phụ kiện <i class = "icon-right ti-angle-right"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Danh sách sản phẩm đã chọn-->
+    <div class="chosen">
+        <div class="header-bar">
+            <div class="part1">
+                <input type="checkbox">
+                <span>Sản phẩm</span>
+            </div>
+
+            <div class="part2">
+                <ul>
+                    <li class="action">
+                        Thao tác
+                    </li>
+                    <li class="money">
+                        Số tiền
+                    </li>
+                    <li class="action">
+                        Số lượng
+                    </li>
+                    <li class="money">
+                        Đơn giá
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="p1">
+                <input type="checkbox">
+            </div>
+
+            <div class="p2">
+                <div class="p2-1">
+                    <img class="img" src="https://cdn2492.cdn-template-4s.com/thumbs/san-pham/dien-thoai/108_thumb_350.webp">
+                    <span class="text">Plug Charger Power Supply AC Adapter</span>
+                </div>
+                <span class="p2-2">Phân loại hàng: Phụ kiện</span>
+            </div>
+
+            <ul class="p3">
+                <li>
+                    <span class="price1">500.000 VND</span> 
+                </li>
+                <li><input type="number" value="1" class="number"></li>
+                <li>
+                    <span class="price2">500.000 VND</span>
+                </li>
+                <li><span class="delete">Xóa</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--mua-->
+    <div class="buy">
+        <div class="voucher">
+            <a href="#">Chọn hoặc nhập mã</a>
+        </div>
+
+        <div class="action">
+            <div class="choose">
+                <input type="checkbox">
+                <span>Chọn tất cả (0 sản phẩm)</span>
+            </div>
+            <div class="pay">
+                <span>Tổng thanh toán (0 sản phẩm):</span>
+                <div class="money">
+                    <span>0 VND</span>
+                </div>
+                <button>Mua hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div id="footer">
+        <div class="company">
+          <h4 class="company-header">CÔNG TY TNHH PHẦN MỀM NHÂN HÒA</h4>
+          <ul>
+            <li>Hotline: 1900 6680 - 0901191616</li>
+            <li>
+              Địa chỉ: Tầng 4, Tòa nhà số 97 - 99 Láng Hạ, Đống Đa, Hà Nội (Tòa
+              nhà Petrowaco)
+            </li>
+            <li>Email: contact@sm4s.vn</li>
+          </ul>
+          <h5>Theo dõi chúng tôi tại</h5>
+          <div class="footer-button">
+            <button class="square-button">
+              <a href="#">
+                <img
+                  class="shopee-link"
+                  src="https://dienmay04.web4s.com.vn/templates/decor01/assets/media/icon/shopee.png"
+                />
+              </a>
+            </button>
+            <button class="square-button">
+              <a href="#">
+                <img
+                  class="lazada-link"
+                  src="https://dienmay04.web4s.com.vn/templates/decor01/assets/media/icon/lazada.png"
+                />
+              </a>
+            </button>
+            <button class="circle-button">
+              <a href="#">
+                <img
+                  class="circle-link"
+                  src="https://dienmay04.web4s.com.vn/templates/decor01/assets/media/icon/icon_facebook.png"
+                />
+              </a>
+            </button>
+            <button class="circle-button">
+              <a href="#">
+                <img
+                  class="circle-link"
+                  src="https://dienmay04.web4s.com.vn/templates/decor01/assets/media/icon/icon_youtube2.png"
+                />
+              </a>
+            </button>
+            <button class="circle-button">
+              <a href="#">
+                <img
+                  class="circle-link"
+                  src="https://dienmay04.web4s.com.vn/templates/decor01/assets/media/icon/icon_pin.png"
+                />
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <div class="custom-service">
+          <h4 class="custom-service-header">HỖ TRỢ KHÁCH HÀNG</h4>
+          <ul>
+            <li>
+              <a class="custom-service-text" href="#">Hướng dẫn mua hàng</a>
+            </li>
+            <li>
+              <a class="custom-service-text" href="#"
+                >Chính sách thanh toán & giao nhận</a
+              >
+            </li>
+            <li>
+              <a class="custom-service-text" href="#">Chính sách bảo hành</a>
+            </li>
+            <li>
+              <a class="custom-service-text" href="#"
+                >Chính sách bảo mật thông tin</a
+              >
+            </li>
+            <li>
+              <a class="custom-service-text" href="#">Chính sách đổi hàng</a>
+            </li>
+            <li>
+              <a class="custom-service-text" href="#">Cam kết hoàn tiền 100%</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-link">
+          <a href="https://www.facebook.com/1788503664729545?ref=embed_page">
+            <img
+              class="footer-img"
+              src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/455270364_1045555700908305_1612718668472794575_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHNhyWn9Muu3zTBdUOMtgDYjS97lvDn0BeNL3uW8OfQF1uf9wkRtKw_A3SOJZ8Ktynk-YVVjg8tyjdScCKeOVjr&_nc_ohc=IgnljjPI8LQQ7kNvgGZwGhI&_nc_ht=scontent.fhan17-1.fna&oh=00_AYCnMdCM4ccZ1u8811-57sAI_SHDzoxEJKsTtt7XvJvf3w&oe=66C24579"
+            />
+          </a>
+        </div>
+      </div>
+</body>
+</html>

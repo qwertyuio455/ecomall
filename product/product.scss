@@ -360,7 +360,7 @@ p {
     margin: 50px;
     display: flex;
     justify-content: space-between;
-    .star 
+    .star {
         padding: 10px 20px;
         span {
             font-size: 20px;
@@ -437,6 +437,7 @@ p {
         i {
             color: rgb(61, 111, 250);
             padding: 14px;
+            cursor: pointer;
         }
     }
     button {
